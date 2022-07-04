@@ -1,0 +1,162 @@
+/* farger */
+
+:root {
+
+    /*groenn*/
+    --groenn_standard: #156630;
+    --groenn_hover: #1A833B;
+    --groenn_moerk: #05620A;
+    --groenn_lys: #D0ECD6;
+
+    /*Blaa*/
+    --blaa_moerk: #175092;
+    --blaa: #1A589F;
+    --blaa_lys: #E4F1F8;
+    --blaa_hover: #439CCD;
+    --blaa_moerk_knapp: #213060;
+
+    /*roed og rosa*/
+    --roed_feilmelding: #A32F00;
+    --roed_moerk: #D04a14;
+    --rosa: #F7E6EB;
+
+    /*oransje og gul*/
+    --oransje: #FCF1E8;
+    --gul: #FFDD9D;
+    --gul_lys: #FCEBCD;
+
+    /*svart og hvit*/
+    --svart: #222222;
+    --hvit: #FFFFFF;
+
+    /*graa*/
+    --graa_moerk: #505050;
+    --graa: #707070;
+    --graa_lys: #F5F2F2;
+}
+
+.palette,
+.palette * {
+    box-sizing: border-box;
+}
+
+.palette {
+    font-family: sans-serif;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.palette__color {
+    height: 150px;
+    position: relative;
+}
+
+.palette__desc {
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--hvit);
+}
+
+.palette__text {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid var(--graa_lys);
+    border-top: none;
+}
+
+.palette_groenn_standard {
+    background: var(--groenn_standard);
+}
+
+.palette_groenn_hover {
+    background: var(--groenn_hover);
+}
+
+.palette_groenn_moerk {
+    background: var(--groenn_moerk);
+}
+
+.palette_groenn_lys {
+    background: var(--groenn_lys);
+}
+
+.palette_blaa_moerk {
+    background: var(--blaa_moerk);
+}
+
+.palette_blaa {
+    background: var(--blaa);
+}
+
+.palette_blaa_lys {
+    background: var(--blaa_lys);
+}
+
+.palette_blaa_hover {
+    background: var(--blaa_hover);
+}
+
+.palette_blaa_moerk_knapp {
+    background: var(--blaa_moerk_knapp);
+}
+
+.palette_roed_feilmelding {
+    background: var(--roed_feilmelding);
+}
+
+.palette_roed_moerk {
+    background: var(--roed_moerk);
+}
+
+.palette_rosa {
+    background: var(--rosa);
+}
+
+.palette_oransje {
+    background: var(--oransje);
+}
+
+.palette_gul {
+    background: var(--gul);
+}
+
+.palette_gul_lys {
+    background: var(--gul_lys);
+}
+
+.palette_svart {
+    background: var(--svart);
+}
+
+.palette_hvit {
+    background: var(--hvit);
+    border: 1px solid var(--graa_lys);
+}
+
+.palette_graa_moerk {
+    background: var(--graa_moerk);
+}
+
+.palette_graa {
+    background: var(--graa);
+}
+
+.palette_graa_lys {
+    background: var(--graa_lys);
+}
+
+
+
+
+
+
+
+
+
+

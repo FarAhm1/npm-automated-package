@@ -1,0 +1,79 @@
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox label {
+    position: relative;
+    display: inline-block;
+
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    padding-left: 2rem;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+
+.checkbox label::before{
+    height: 15px;
+    width: 15px;
+
+    border: 2px solid;
+    border-radius: 0.10rem;
+    left: 0;
+    color: var(--blaa_moerk);
+
+    top: 3px;
+}
+
+.checkbox label::after {
+    height: 5px;
+    width: 9px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+
+    transform: rotate(-45deg);
+
+    left: 4px;
+    top: 7px;
+}
+
+/*Hide checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*set checkmark on checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+    color: var(--hvit);
+}
+
+/*change background color of checkbox on checked state*/
+.checkbox input[type="checkbox"]:checked + label::before {
+    background-color: var(--blaa_moerk);
+}
+
+/*Adding focus styles on outer-box*/
+.checkbox input[type="checkbox"]:focus-visible + label::before {
+    outline: max(3px, 0.15em) solid var(--blaa_moerk);
+    outline-offset: 2px;
+}
+
+/* ----CHECKBOX ERROR----*/
+/*set background on the checked state*/
+.checkbox input[type="checkbox"]:required:invalid + label::before {
+    color: var(--roed_feilmelding);
+    /*background-color: var(--roed_feilmelding);*/
+}
+
+/*Adding focus styles on the outer-box*/
+.checkbox input[type="checkbox"]:focus-visible:invalid + label::before {
+    outline: max(3px, 0.15em) solid var(--roed_feilmelding);
+    outline-offset: 2px;
+}

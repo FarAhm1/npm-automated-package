@@ -1,0 +1,22 @@
+{
+  "name": "css-package-test",
+  "version": "1.0.0",
+  "description": "package testing for publishing npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FarAhm1/npm-automated-package.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "FarAhm1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FarAhm1/npm-automated-package/issues"
+  },
+  "homepage": "https://github.com/FarAhm1/npm-automated-package#readme"
+}
