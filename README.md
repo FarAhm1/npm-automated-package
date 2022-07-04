@@ -1,0 +1,1 @@
+# npm-automated-package
